@@ -1,13 +1,14 @@
 import { ArrowRight, Download } from "lucide-react"
 import { Button } from "../components/Button"
+import bgImage from "../assets/bg.jpg";
 
 export const Hero = () => {
     return <section className="relative min-h-screen flex items-center overflow-hidden">
         {/* Bg */}
         <div className="absolute inset-0">
             <img
-                src="bg.jpg"
-                alt="Hero Image"
+                src={bgImage}
+                alt="bg Image"
                 className="w-full h-full object-cover opacity-50"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background" />
@@ -72,6 +73,20 @@ export const Hero = () => {
                     {/* Social Links */}
                     <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
                         <span className="text-sm text-muted-foreground">follow:</span>
+                        <a href="#" className="text-primary hover:text-primary/80">
+                            Facebook
+                        </a>
+                        <a href="#" className="text-primary hover:text-primary/80">
+                            Linkedin
+                        </a>
+                        <a href="#" className="text-primary hover:text-primary/80">
+                            Twitter
+                        </a>
+
+
+
+
+
 
                     </div>
 
@@ -79,7 +94,7 @@ export const Hero = () => {
                 {/* Right Column- Profile Image */}
                 <div >
 
-
+                    <h1>JUNMAR TANODRA</h1>
 
                 </div>
 
