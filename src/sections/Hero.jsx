@@ -94,7 +94,7 @@ export const Hero = () => {
                 {/* Right Column- Profile Image */}
                 <div >
 
-                    <h1>JUNMAR TANODRA</h1>
+                    <h1>JUNMAR M. TANODRA</h1>
 
                 </div>
 
