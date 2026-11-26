@@ -112,6 +112,7 @@ export const Hero = () => {
                                 <div>
                                     <div />
                                     <span>Available for work</span>
+                                    <span>work With me</span>
                                 </div>
                             </div>
                             {/* Stats Badge */}
