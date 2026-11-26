@@ -1,6 +1,7 @@
 import { ArrowRight, Download } from "lucide-react"
 import { Button } from "../components/Button"
-import bgImage from "../assets/bg.jpg";
+import bgImage from "../assets/bg.jpg"
+import profileImage from "../assets/profile.png"
 
 export const Hero = () => {
     return <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -38,7 +39,7 @@ export const Hero = () => {
                 <div className="space-y-8">
                     <div className="animate-fade-in">
                         <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
-                            <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />Software Engineer • React Specialist
+                            <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />Software Developer • React
                         </span>
                     </div>
                     {/* Headline */}
@@ -53,8 +54,8 @@ export const Hero = () => {
                             </span>
                         </h1>
                         <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                            Hi, I'm Junmar Tanodra - a software engineer specialist in
-                            React, Next,js, and TypeScript. I build scalable, performance web
+                            Hi, I'm Junmar Tanodra - a Web Developer in
+                            React, Next.js, and TypeScript. I build scalable, performance web
                             applications that users love.
                         </p>
                     </div>
@@ -92,9 +93,32 @@ export const Hero = () => {
 
                 </div>
                 {/* Right Column- Profile Image */}
-                <div >
+                <div className="relative animate-fade-in animation-delay-300">
+                    {/* Profile Image */}
+                    <div classname="relative max-w-md mx-auto">
+                        <div className="absolute inset-0
+                        rounded-3xl bg-gradient-to-br
+                        from-primary/30 via-transparent
+                        to-primary/10 blur-2xl animate-pulse"
+                        />
+                        <div classname="relative glass rounded-3xl p-2 glow-border">
+                            <img src={profileImage} alt="Junmar Tanodra" className="w-full aspect-[4/5] object-cover
+                              rounded-2xl
+                              shadow-[0_0_5px_#20b2a6,0_0_5px_#20b2a6,0_0_45px_#20b2a6] brightness-75"
+                            />
 
-                    <h1>JUNMAR M. TANODRA</h1>
+                            {/* Floating Badge */}
+                            <div classname="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
+                                <div>
+                                    <div />
+                                    <span>Available for work</span>
+                                </div>
+                            </div>
+                            {/* Stats Badge */}
+                        </div>
+                    </div>
+
+
 
                 </div>
 
